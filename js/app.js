@@ -22,7 +22,13 @@ const showProducts = (products) => {
       <p><span class='fw-bold'>Category</span>: ${product.category}</p>
       <h2>Price: $${product.price}</h2>
       
-      <h5><i class="fas fa-star"></i><span class='text-danger'>${product.rating.rate}</span> <i class="fas fa-user"></i><span class='text-warning'> ${product.rating.count}</span></h5>
+      <h5>
+      <i class="fas fa-star stars"></i>
+      <i class="fas fa-star stars"></i>
+      <i class="fas fa-star stars"></i>
+      <i class="fas fa-star-half-alt stars"></i>
+      <span>${product.rating.rate}</span> </h5>
+      <h5><i class="fas fa-user "></i><span class='text-white'> ${product.rating.count}</span></h5>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success ">add to cart</button>
       <button type="button" onclick="singleProduct(${product.id})" class="btn btn-info ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Details</button></div>
       `;
