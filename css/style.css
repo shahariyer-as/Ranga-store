@@ -19,7 +19,7 @@ body {
 }
 
 .single-product {
-  height: 600px;
+  height: 525px;
   transition: 0.6s;
   background-color: rgb(24, 30, 53);
 }
